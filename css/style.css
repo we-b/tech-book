@@ -51,7 +51,7 @@
 }
 
 .navbar-primary {
-    background: #F56961;
+    background: $main_color;
 }
 
 .navbar-bottom {
@@ -124,7 +124,7 @@
     width: 190px;
     display: none;
     border: 1px solid #E3E3E3;
-    border-top: 2px solid #F56961;
+    border-top: 2px solid $main_color;
     background: #FFF;
     padding: 20px;
 }
@@ -662,7 +662,7 @@ ol.breadcrumb-list.booking-step li:not(:last-child) span:after {
 }
 
 .breadcrumb-wrapper ol.breadcrumb-list li a {
-    color: #F56961;
+    color: $main_color;
 }
 
 .breadcrumb-wrapper ol.breadcrumb-list li a:hover {
@@ -809,7 +809,7 @@ ul.availabily-list li.availabily-content > div.date-from:after {
     right: 0;
     margin-top: -4px;
     display: block;
-    color: #F56961;
+    color: $main_color;
 }
 
 ul.availabily-list li.availabily-content.sold-out > div.date-from:after {
@@ -1401,11 +1401,11 @@ ul.sort-by li a:after {
 
 ul.sort-by li.active a,
 ul.sort-by li a:hover {
-    color: #F56961;
+    color: $main_color;
 }
 
 ul.sort-by li.active a:after {
-    background: #F56961;
+    background: $main_color;
 }
 
 .btn-sorting {
@@ -1418,7 +1418,7 @@ ul.sort-by li.active a:after {
 
 .btn-sorting.active,
 .btn-sorting:hover {
-    color: #F56961;
+    color: $main_color;
 }
 
 @media only screen and (max-width: 1199px) {}
@@ -1516,7 +1516,7 @@ ul.sort-by li.active a:after {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-    background-color: #F56961;
+    background-color: $main_color;
 }
 
 @media only screen and (max-width: 1199px) {}
@@ -1547,7 +1547,7 @@ ul.sort-by li.active a:after {
 .featured-item .content .icon {
     float: left;
     font-size: 56px;
-    color: #F56961;
+    color: $main_color;
     margin-top: 5px;
 }
 
@@ -1609,8 +1609,8 @@ ul.featured-list-sm li .icon {
     display: block;
     line-height: 30px;
     text-align: center;
-    color: #F56961;
-    border: 2px solid #F56961;
+    color: $main_color;
+    border: 2px solid $main_color;
     font-size: 16px;
     border-radius: 3px;
 }
@@ -1822,7 +1822,7 @@ a.top-destination-image-bg {
 }
 
 .package-grid-item .absolute-in-image .duration span {
-    background: #F56961;
+    background: $main_color;
     color: #FFF;
     padding: 4px 7px;
     border-radius: 3px;
@@ -1865,7 +1865,7 @@ a.top-destination-image-bg {
 }
 
 .absolute-in-content .price {
-    color: #F56961;
+    color: $main_color;
     font-size: 16px;
     font-weight: 700;
 }
@@ -1903,7 +1903,7 @@ a.top-destination-image-bg {
 }
 
 .alt-smaller .price {
-    color: #F56961;
+    color: $main_color;
     font-size: 14px;
 }
 
@@ -1941,7 +1941,7 @@ a.top-destination-image-bg {
 }
 
 .package-list-item .absolute-in-image .duration span {
-    background: #F56961;
+    background: $main_color;
     color: #FFF;
     padding: 4px 7px;
     border-radius: 3px;
@@ -1975,7 +1975,7 @@ a.top-destination-image-bg {
 }
 
 .package-list-item .content .price {
-    color: #F56961;
+    color: $main_color;
     font-size: 16px;
     font-weight: 700;
     margin: 15px 0 25px;
@@ -2010,7 +2010,7 @@ ul.list-info li .icon {
     line-height: 19px;
     padding-left: 1px;
     border-radius: 50%;
-    background: #F56961;
+    background: $main_color;
     color: #FFF;
     text-align: center;
     font-size: 10px;
@@ -2156,7 +2156,7 @@ ul.list-info.bb-dotted li {
     width: 22px;
     height: 22px;
     line-height: 22px;
-    background: #F56961;
+    background: $main_color;
     color: #FFF;
     border-radius: 50%;
     display: block;
@@ -2178,8 +2178,8 @@ ul.list-info.bb-dotted li {
     position: absolute;
     top: -1px;
     left: -42px;
-    background: #F56961;
-    border: 2px solid #F56961;
+    background: $main_color;
+    border: 2px solid $main_color;
     color: #FFF;
     width: 22px;
     height: 22px;
@@ -2192,8 +2192,8 @@ ul.list-info.bb-dotted li {
 
 .itinerary-item-wrapper .panel-heading.active .absolute-day-number {
     background: #FFF;
-    border: 2px solid #F56961;
-    color: #F56961;
+    border: 2px solid $main_color;
+    color: $main_color;
 }
 
 .itinerary-item-wrapper .panel-title a {
@@ -2345,7 +2345,7 @@ ul.itinerary-meta li {
     height: 90px;
     line-height: 98px;
     text-align: center;
-    background: #F56961;
+    background: $main_color;
     border-radius: 50%;
     color: #FFF;
     float: left;
@@ -2413,7 +2413,7 @@ ul.itinerary-meta li {
 }
 
 .about-us-grid-block-item {
-    background: #F56961;
+    background: $main_color;
     color: #FFF;
     padding: 30px;
 }
@@ -2510,7 +2510,7 @@ ul.itinerary-meta li {
 
 .review-overall-point span {
     font-weight: 600;
-    color: #F56961;
+    color: $main_color;
     font-size: 19px;
 }
 
@@ -2721,7 +2721,7 @@ ul.review-list li .rating-wrapper {
     top: -1px;
     -webkit-transform: rotate(0);
     transform: rotate(0);
-    color: #F56961;
+    color: $main_color;
 }
 
 .faq-alt-2-wrapper .bootstarp-accordion .panel-heading.active a:before {
@@ -2744,7 +2744,7 @@ ul.review-list li .rating-wrapper {
 }
 
 .for-faq-page.scrollspy-sidebar .nav > li > a:hover {
-    border-right: 4px solid #F56961;
+    border-right: 4px solid $main_color;
 }
 
 .for-faq-page.scrollspy-sidebar .nav > li > a:focus {
@@ -2754,7 +2754,7 @@ ul.review-list li .rating-wrapper {
 .for-faq-page.scrollspy-sidebar .nav > .active > a,
 .for-faq-page.scrollspy-sidebar .nav > .active:hover > a,
 .for-faq-page.scrollspy-sidebar .nav > .active:focus > a {
-    border-right: 4px solid #F56961 !important;
+    border-right: 4px solid $main_color !important;
     border-left: 4px solid #FFF !important;
 }
 
@@ -2806,7 +2806,7 @@ ul.review-list li .rating-wrapper {
     height: 26px;
     line-height: 26px;
     border-radius: 50%;
-    background: #F56961;
+    background: $main_color;
     color: #FFF;
     text-align: center;
     position: absolute;
@@ -2855,7 +2855,7 @@ ul.price-summary-list li.divider {
 }
 
 ul.price-summary-list li.total-price {
-    background: #F56961;
+    background: $main_color;
     color: #FFF;
     margin: 25px -19px -29px;
     padding: 20px 19px;
@@ -3149,7 +3149,7 @@ ul.social-share-sm.for-useful li a:after {
     float: left;
     text-align: center;
     line-height: 36px;
-    background: #F56961;
+    background: $main_color;
     color: #FFF;
     border-radius: 3px;
 }
@@ -3421,7 +3421,7 @@ ul.comment-item ul {
     line-height: 1;
     padding: 3px 7px;
     text-transform: uppercase;
-    border: 2px solid #F56961;
+    border: 2px solid $main_color;
     border-radius: 5px;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -3737,8 +3737,8 @@ ul.static-page-menu li a {
 
 ul.static-page-menu li a:hover,
 ul.static-page-menu li.active a {
-    border-right: 4px solid #F56961;
-    color: #F56961;
+    border-right: 4px solid $main_color;
+    color: $main_color;
 }
 
 .static-wrapper h1:first-child,
