@@ -403,7 +403,7 @@
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+    /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);*/
     line-height: 1.4;
 }
 
@@ -665,7 +665,7 @@ input[type='radio'] + label:hover::before,
 input[type='checkbox'] + label:hover::before,
 input[type='radio']:checked + label:before,
 input[type='checkbox']:checked + label:before {
-    color: #D65049;
+    color: $dark_color;
 }
 
 
@@ -1036,9 +1036,9 @@ input[type='checkbox']:checked + label:before {
 }
 
 #back-to-top a:hover {
-    background-color: #D65049;
+    background-color: $dark_color;
     color: #FFF;
-    border-color: #D65049;
+    border-color: $dark_color;
 }
 
 
@@ -1756,7 +1756,7 @@ input[type='checkbox']:checked + label:before {
     background-image: -o-linear-gradient(top, white 50%, #eee 100%);
     background-image: linear-gradient(to bottom, white 50%, #eee 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)*/
 }
 
 .select2-container--classic .select2-selection--single:focus {
@@ -1794,7 +1794,7 @@ input[type='checkbox']:checked + label:before {
     background-image: -o-linear-gradient(top, #eee 50%, #ccc 100%);
     background-image: linear-gradient(to bottom, #eee 50%, #ccc 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0)
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0)*/
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__arrow b {
@@ -1805,13 +1805,13 @@ input[type='checkbox']:checked + label:before {
     left: 50%;
     margin-left: -4px;
     margin-top: -2px;
-    position: absolute;
+    /*position: absolute;*/
     top: 50%;
     width: 0
 }
 
 .select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear {
-    float: left
+    float: left;
 }
 
 .select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow {
@@ -1821,21 +1821,21 @@ input[type='checkbox']:checked + label:before {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     left: 1px;
-    right: auto
+    right: auto;
 }
 
 .select2-container--classic.select2-container--open .select2-selection--single {
-    border: 1px solid #5897fb
+    border: 1px solid #5897fb;
 }
 
 .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
     background: transparent;
-    border: none
+    border: none;
 }
 
 .select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
     border-color: transparent transparent #888;
-    border-width: 0 4px 5px
+    border-width: 0 4px 5px;
 }
 
 .select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
@@ -1846,7 +1846,7 @@ input[type='checkbox']:checked + label:before {
     background-image: -o-linear-gradient(top, white 0%, #eee 50%);
     background-image: linear-gradient(to bottom, white 0%, #eee 50%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)*/
 }
 
 .select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
@@ -1857,7 +1857,7 @@ input[type='checkbox']:checked + label:before {
     background-image: -o-linear-gradient(top, #eee 50%, white 100%);
     background-image: linear-gradient(to bottom, #eee 50%, white 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0)
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0)*/
 }
 
 .select2-container--classic .select2-selection--multiple {
@@ -1865,21 +1865,21 @@ input[type='checkbox']:checked + label:before {
     border: 1px solid #aaa;
     border-radius: 4px;
     cursor: text;
-    outline: 0
+    outline: 0;
 }
 
 .select2-container--classic .select2-selection--multiple:focus {
-    border: 1px solid #5897fb
+    border: 1px solid #5897fb;
 }
 
 .select2-container--classic .select2-selection--multiple .select2-selection__rendered {
     list-style: none;
     margin: 0;
-    padding: 0 5px
+    padding: 0 5px;
 }
 
 .select2-container--classic .select2-selection--multiple .select2-selection__clear {
-    display: none
+    display: none;
 }
 
 .select2-container--classic .select2-selection--multiple .select2-selection__choice {
@@ -1890,7 +1890,7 @@ input[type='checkbox']:checked + label:before {
     float: left;
     margin-right: 5px;
     margin-top: 5px;
-    padding: 0 5px
+    padding: 0 5px;
 }
 
 .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
@@ -1898,89 +1898,89 @@ input[type='checkbox']:checked + label:before {
     cursor: pointer;
     display: inline-block;
     font-weight: 700;
-    margin-right: 2px
+    margin-right: 2px;
 }
 
 .select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
-    color: #555
+    color: #555;
 }
 
 .select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
     float: right;
     margin-left: 5px;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {
     margin-left: 2px;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .select2-container--classic.select2-container--open .select2-selection--multiple {
-    border: 1px solid #5897fb
+    border: 1px solid #5897fb;
 }
 
 .select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
     border-top: none;
     border-top-left-radius: 0;
-    border-top-right-radius: 0
+    border-top-right-radius: 0;
 }
 
 .select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {
     border-bottom: none;
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0
+    border-bottom-right-radius: 0;
 }
 
 .select2-container--classic .select2-search--dropdown .select2-search__field {
     border: 1px solid #aaa;
-    outline: 0
+    outline: 0;
 }
 
 .select2-container--classic .select2-search--inline .select2-search__field {
     outline: 0;
-    box-shadow: none
+    box-shadow: none;
 }
 
 .select2-container--classic .select2-dropdown {
     background-color: #fff;
-    border: 1px solid transparent
+    border: 1px solid transparent;
 }
 
 .select2-container--classic .select2-dropdown--above {
-    border-bottom: none
+    border-bottom: none;
 }
 
 .select2-container--classic .select2-dropdown--below {
-    border-top: none
+    border-top: none;
 }
 
 .select2-container--classic .select2-results > .select2-results__options {
     max-height: 200px;
-    overflow-y: auto
+    overflow-y: auto;
 }
 
 .select2-container--classic .select2-results__option[role=group] {
-    padding: 0
+    padding: 0;
 }
 
 .select2-container--classic .select2-results__option[aria-disabled=true] {
-    color: grey
+    color: grey;
 }
 
 .select2-container--classic .select2-results__option--highlighted[aria-selected] {
     background-color: #3875d7;
-    color: #fff
+    color: #fff;
 }
 
 .select2-container--classic .select2-results__group {
     cursor: default;
     display: block;
-    padding: 6px
+    padding: 6px;
 }
 
 .select2-container--classic.select2-container--open .select2-dropdown {
-    border-color: #
+    border-color: none;
 }
 
 
@@ -2064,7 +2064,7 @@ input[type='checkbox']:checked + label:before {
 
 .select2-container--default .select2-selection--single:focus,
 .select2-container input:focus {
-    border-color: #D65049 !important;
+    border-color: $dark_color !important;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -3199,7 +3199,7 @@ input[type='checkbox']:checked + label:before {
 }
 
 .no-rgba .m_tooltip {
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorStr='#313436', EndColorStr='#222526')
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorStr='#313436', EndColorStr='#222526')*/
 }
 
 .no-cssgradients .m_tooltip {

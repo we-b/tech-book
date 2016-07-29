@@ -144,7 +144,7 @@
 }
 
 .navbar-nav li ul li:hover > a {
-    color: #D65049;
+    color: $dark_color;
 }
 
 .navbar-nav li ul li ul {
@@ -179,12 +179,12 @@
 .navbar-nav > li.dropdown.active > a:hover,
 .navbar-nav > li:hover > a,
 .navbar-nav > li.active > a {
-    color: #D65049;
+    color: $dark_color;
     background: none;
 }
 
 .navbar-nav > li.mega-menu ul li a:hover {
-    color: #D65049;
+    color: $dark_color;
 }
 
 
@@ -457,7 +457,7 @@
 
 .navbar-sticky .navbar-nav > li > a:hover,
 .navbar-sticky .navbar-nav > li > a:focus {
-    color: #D65049;
+    color: $dark_color;
     background-color: transparent
 }
 
@@ -666,7 +666,7 @@ ol.breadcrumb-list.booking-step li:not(:last-child) span:after {
 }
 
 .breadcrumb-wrapper ol.breadcrumb-list li a:hover {
-    color: #D65049;
+    color: $dark_color;
 }
 
 .breadcrumb-wrapper ol.breadcrumb-list li span,
@@ -1099,7 +1099,7 @@ ul.availabily-list li.availabily-content.sold-out > div.date-from:after {
 }
 
 .sidebar-inner.for-blog a:hover {
-    color: #D65049;
+    color: $dark_color;
 }
 
 .sidebar-module {
@@ -1231,7 +1231,7 @@ ul.sidebar-post li h6 {
 }
 
 ul.sidebar-post li a:hover h6 {
-    color: #D65049;
+    color: $dark_color;
 }
 
 ul.sidebar-post li .image {
@@ -1283,9 +1283,9 @@ ul.sidebar-post li .recent-post-sm-meta {
 }
 
 .tag-cloud a:hover {
-    background: #D65049;
+    background: $dark_color;
     color: #FFF !important;
-    border-color: #D65049;
+    border-color: $dark_color;
 }
 
 .tag-cloud-wrapper {
@@ -1506,7 +1506,7 @@ ul.sort-by li.active a:after {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-    color: #D65049;
+    color: $dark_color;
     background-color: #FFF;
 }
 
@@ -2453,7 +2453,7 @@ ul.itinerary-meta li {
 }
 
 .team-item ul.social li a:hover {
-    color: #D65049;
+    color: $dark_color;
 }
 
 .partner-image-item {
@@ -3031,7 +3031,7 @@ ul.social-share-sm li a {
 }
 
 ul.social-share-sm li a:hover {
-    color: #D65049;
+    color: $dark_color;
 }
 
 ul.social-share-sm.for-useful {
@@ -3155,7 +3155,7 @@ ul.social-share-sm.for-useful li a:after {
 }
 
 .boxed-social a:hover {
-    background: #D65049;
+    background: $dark_color;
 }
 
 ul.address-list li {
@@ -3236,7 +3236,7 @@ ul.address-list li i {
 }
 
 .blog-content h3 a:hover {
-    color: #D65049;
+    color: $dark_color;
 }
 
 .blog-entry {
@@ -3330,7 +3330,7 @@ ul.blog-meta li:last-child:after {
 }
 
 .blog-author h5 a:hover {
-    color: #D65049;
+    color: $dark_color;
 }
 
 .author-details {
@@ -3430,8 +3430,8 @@ ul.comment-item ul {
 
 .comment-item a.comment-reply:hover {
     color: #FFF;
-    border-color: #D65049;
-    background: #D65049;
+    border-color: $dark_color;
+    background: $dark_color;
 }
 
 @media only screen and (max-width: 1199px) {

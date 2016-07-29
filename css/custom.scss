@@ -1,0 +1,8 @@
+.btn-primary {
+  background-color: $accent_color;
+  border-color: $accent_color;
+  &:hover {
+    background-color: lighten($accent_color, 10%);
+    border-color: $accent_color;
+  }
+}
