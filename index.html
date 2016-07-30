@@ -31,27 +31,27 @@
 					<!-- Begin # Login Form -->
 					<form id="login-form">
 						<div class="modal-body pb-5">
-							<h4 class="text-center heading mt-10 mb-20">Sign-in</h4>
-							<button class="btn btn-facebook btn-block">Sign-in with Facebook</button>
+							<h4 class="text-center heading mt-10 mb-20">ログイン</h4>
+							<button class="btn btn-facebook btn-block">Facebookでログイン</button>
 							<div class="modal-seperator">
 								<span>or</span>
 							</div>
 							<div class="form-group">
-								<input id="login_username" class="form-control" placeholder="username" type="text">
+								<input id="login_username" class="form-control" placeholder="ユーザーネーム" type="text">
 							</div>
 							<div class="form-group">
-								<input id="login_password" class="form-control" placeholder="password" type="password">
+								<input id="login_password" class="form-control" placeholder="パスワード" type="password">
 							</div>
 							<div class="form-group">
 								<div class="row gap-5">
 									<div class="col-xs-6 col-sm-6 col-md-6">
 										<div class="checkbox-block fa-checkbox">
 											<input id="remember_me_checkbox" name="remember_me_checkbox" class="checkbox" value="First Choice" type="checkbox"> 
-											<label class="" for="remember_me_checkbox">remember</label>
+											<label class="" for="remember_me_checkbox">ログイン情報を記憶する</label>
 										</div>
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-6 text-right">
-										<button id="login_lost_btn" type="button" class="btn btn-link">forgot pass?</button>
+										<button id="login_lost_btn" type="button" class="btn btn-link">パスワードをお忘れですか?</button>
 									</div>
 								</div>
 							</div>
@@ -59,15 +59,15 @@
 						<div class="modal-footer">
 							<div class="row gap-10">
 								<div class="col-xs-6 col-sm-6 mb-10">
-									<button type="submit" class="btn btn-primary btn-block">Sign-in</button>
+									<button type="submit" class="btn btn-primary btn-block">ログイン</button>
 								</div>
 								<div class="col-xs-6 col-sm-6 mb-10">
-									<button type="submit" class="btn btn-primary btn-block btn-inverse" data-dismiss="modal" aria-label="Close">Cancel</button>
+									<button type="submit" class="btn btn-primary btn-block btn-inverse" data-dismiss="modal" aria-label="Close">戻る</button>
 								</div>
 							</div>
 							<div class="text-left">
-								No account?
-								<button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+								まだアカウントをお持ちでない場合は
+								<button id="login_register_btn" type="button" class="btn btn-link">こちら</button>
 							</div>
 						</div>
 					</form>
@@ -75,22 +75,22 @@
 					<!-- Begin | Lost Password Form -->
 					<form id="lost-form" style="display:none;">
 						<div class="modal-body pb-5">
-							<h3 class="text-center heading mt-10 mb-20">Forgot password</h3>
+							<h3 class="text-center heading mt-10 mb-20">パスワードの再設定</h3>
 							<div class="form-group mb-10">
-								<input id="lost_email" class="form-control" type="text" placeholder="Enter Your Email">
+								<input id="lost_email" class="form-control" type="text" placeholder="登録したアドレスを入力">
 							</div>
 							<div class="text-center">
-								<button id="lost_login_btn" type="button" class="btn btn-link">Sign-in</button> or 
-								<button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+								<button id="lost_login_btn" type="button" class="btn btn-link">ログイン</button> / 
+								<button id="lost_register_btn" type="button" class="btn btn-link">新規登録</button>
 							</div>
 						</div>
 						<div class="modal-footer mt-10">
 							<div class="row gap-10">
 								<div class="col-xs-6 col-sm-6">
-									<button type="submit" class="btn btn-primary btn-block">Submit</button>
+									<button type="submit" class="btn btn-primary btn-block">メールを送信</button>
 								</div>
 								<div class="col-xs-6 col-sm-6">
-									<button type="submit" class="btn btn-primary btn-inverse btn-block" data-dismiss="modal" aria-label="Close">Cancel</button>
+									<button type="submit" class="btn btn-primary btn-inverse btn-block" data-dismiss="modal" aria-label="Close">戻る</button>
 								</div>
 							</div>
 						</div>
@@ -99,36 +99,36 @@
 					<!-- Begin | Register Form -->
 					<form id="register-form" style="display:none;">
 						<div class="modal-body pb-5">
-							<h3 class="text-center heading mt-10 mb-20">Register</h3>
-							<button class="btn btn-facebook btn-block">Register with Facebook</button>
+							<h3 class="text-center heading mt-10 mb-20">新規登録</h3>
+							<button class="btn btn-facebook btn-block">Facebookで登録</button>
 							<div class="modal-seperator">
 								<span>or</span>
 							</div>
 							<div class="form-group">
-								<input id="register_username" class="form-control" type="text" placeholder="Username">
+								<input id="register_username" class="form-control" type="text" placeholder="ユーザーネーム">
 							</div>
 							<div class="form-group">
-								<input id="register_email" class="form-control" type="email" placeholder="Email">
+								<input id="register_email" class="form-control" type="email" placeholder="Emailアドレス">
 							</div>
 							<div class="form-group">
-								<input id="register_password" class="form-control" type="password" placeholder="Password">
+								<input id="register_password" class="form-control" type="password" placeholder="パスワード">
 							</div>
 							<div class="form-group">
-								<input id="register_password_confirm" class="form-control" type="password" placeholder="Confirm Password">
+								<input id="register_password_confirm" class="form-control" type="password" placeholder="パスワードを再入力">
 							</div>
 
 						</div>
 						<div class="modal-footer mt-10">
 							<div class="row gap-10">
 								<div class="col-xs-6 col-sm-6 mb-10">
-									<button type="submit" class="btn btn-primary btn-block">Register</button>
+									<button type="submit" class="btn btn-primary btn-block">登録</button>
 								</div>
 								<div class="col-xs-6 col-sm-6 mb-10">
-									<button type="submit" class="btn btn-primary btn-inverse btn-block" data-dismiss="modal" aria-label="Close">Cancel</button>
+									<button type="submit" class="btn btn-primary btn-inverse btn-block" data-dismiss="modal" aria-label="Close">戻る</button>
 								</div>
 							</div>
 							<div class="text-left">
-									Already have account? <button id="register_login_btn" type="button" class="btn btn-link">Sign-in</button>
+									すでにアカウントをお持ちの場合は<button id="register_login_btn" type="button" class="btn btn-link">こちら</button>
 							</div>
 						</div>
 					</form>
@@ -150,7 +150,7 @@
 						<div class="flex-row flex-align-middle">
 							<div class="flex-shrink flex-columns">
 								<a class="navbar-logo" href="index.html">
-									<img src="images/logo-white.png" alt="Logo" />
+									<img src="images/techbook_logo.png" alt="Logo" />
 								</a>
 							</div>
 							<div class="flex-columns">
@@ -158,7 +158,7 @@
 									<div class="navbar-mini">
 										<ul class="clearfix">
 											<li class="user-action">
-												<a data-toggle="modal" href="#loginModal" class="btn">Sign up/in</a>
+												<a data-toggle="modal" href="#loginModal" class="btn">ログイン／新規登録</a>
 											</li>
 										</ul>
 									</div>
@@ -175,12 +175,12 @@
 		<!-- start Main Wrapper -->
 		<div class="main-wrapper">
 			<!-- start hero-header with windows height -->
-			<div class="hero" style="background-image:url('images/hero-header/01.jpg');">
+			<div class="hero" style="background-image:url('images/bookstore.jpg');">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-							<h1 class="hero-title">Tour with Tour Packer</h1>
-							<p class="lead">Visit Europe, America, Asia, Africa or beyond!</p>
+							<h1 class="hero-title">読んだ技術書は、<br>次の世代のエンジニアへ。</h1>
+							<p class="lead">エンジニアのための書籍シェアリングサービス</p>
 						</div>
 					</div>
 					<div class="main-search-wrapper full-width">
@@ -188,33 +188,36 @@
 							<div class="column-item">
 								<div class="form-group">
 									<select name="destination" class="select2-multi form-control" data-placeholder="Choose a Destination" multiple>
-                    <option value="">Choose a Destination</option>
-                    <option value="0">Any Destination</option>
-                    <option value="Albania">Albania</option>
-                    <option value="Austria">Austria</option>
-                    <option value="Belgium">Belgium</option>
+                    <option value="">カテゴリを選択</option>
+                    <option value="0">HTML CSS</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="rails">Ruby on Rails</option>
+                    <option value="php">PHP</option>
+                    <option value="java">Java</option>
+                    <option value="php">PHP</option>
 									</select>
 								</div>
 							</div>
-							<div class="column-item">
+							<div class="column-item" id="long-column-item">
 								<div class="form-group">
 									<input name="month" class="form-control" placeholder="キーワード">
 									</input>
 								</div>
 							</div>
-							<div class="column-item">
+							<!-- <div class="column-item">
 								<div class="form-group">
-									<select name="year" class="select2-multi form-control" data-placeholder="Choose a Departure Year" multiple>
+									<select name="year" class="select2-multi form-control form-long" data-placeholder="Choose a Departure Year" multiple>
 										<option value="">Choose a Departure Year</option>
 										<option value="0">Any Departure Year</option>
 										<option value="2016">2016</option>
 										<option value="2017">2017</option>
 									</select>
 								</div>
-							</div>
+							</div> -->
 							<div class="column-item for-btn">
 								<div class="form-group">
-									<a href="#" class="btn btn-primary btn-block">Search</a>
+									<a href="#" class="btn btn-primary btn-block">書籍を検索</a>
 								</div>
 							</div>
 						</div>
@@ -222,15 +225,15 @@
 				</div>
 			</div>
 			<!-- end hero-header with windows height -->
-			<div class="post-hero bg-light">
+			<div class="post-hero bg-white">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
 							<div class="featured-count clearfix">
-								<div class="icon"><i class="pe-7s-map-marker"></i></div>
+								<div class="icon"><i class="pe-7s-bookmarks"></i></div>
 								<div class="content">
-									<h6>300+ Destinations</h6>
-									<span>Tastes giving in passed direct me valley supply.</span>
+									<h6>蔵書は500冊以上</h6>
+									<span>現在取引されている本は500冊以上。</span>
 								</div>
 							</div>
 						</div>
@@ -238,8 +241,8 @@
 							<div class="featured-count clearfix">
 								<div class="icon"> <i class="pe-7s-user"></i></div>
 								<div class="content">
-									<h6>500+ Travel Guides</h6>
-									<span>Prepared do an dissuade whatever steepest.</span>
+									<h6>安心のメッセージ機能</h6>
+									<span>出品しているユーザーに直接連絡</span>
 								</div>
 							</div>
 						</div>
@@ -247,20 +250,20 @@
 							<div class="featured-count clearfix">
 								<div class="icon"> <i class="pe-7s-smile"></i></div>
 								<div class="content">
-									<h6>20000+ Happy Customers</h6>
-									<span>Devonshire invitation discovered indulgence.</span>
+									<h6>過去に3000冊</h6>
+									<span>累計3000冊以上がtechbookで取引されています。</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<section>
+			<!-- <section>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 							<div class="section-title">
-								<h3>Top Destinations</h3>
+								<h3>豊富なカテゴリーから本を選択</h3>
 							</div>
 						</div>
 					</div>
@@ -504,8 +507,8 @@
 									</a>
 								</div>
 							</div>
-							<div class="GridLex-col-4_sm-6_xs-12 mb-30">
-								<div class="package-grid-item"> 
+							<div class="GridLex-col-3_sm-4_xs-12 mb-30">
+								<div class="package-grid-item">
 									<a href="detail-page.html">
 										<div class="image">
 											<img src="images/books/book9.jpg" alt="Tour Package" />
@@ -609,40 +612,40 @@
 					<div class="GridLex-col-6_sm-12">
 						<div class="why-us-half-image-content">
 							<div class="section-title text-left">
-								<h3>Why Booking With Us</h3>
-								<p>There are several seasons that you must travel with us</p>
+								<h3>techbookだからできること</h3>
+								<p>techbookならではのサービスを紹介します。</p>
 							</div>
 							<div class="featured-item">
-								<h4>Experts On Tour</h4>
+								<h4>中古書籍なのでリーズナブル</h4>
 								<div class="content clearfix">
 									<div class="icon">
 										<i class="pe-7s-users"></i>
 									</div>
-									<p>Blind would equal while oh mr lain led and fact none. One preferred sportsmen resolving the happiness continued. High at of in loud rich true.</p>
+									<p>新品で買うと高額な技術書も、techbookで買うことでリーズナブルな価格で入手することができます。</p>
 								</div>
 							</div>
 							<div class="featured-item">
-								<h4>Quality Accommodation</h4>
+								<h4>簡単クレジットカード決済</h4>
 								<div class="content clearfix">
 									<div class="icon">
 										<i class="pe-7s-home"></i>
 									</div>
-									<p>Admiration stimulated cultivated reasonable be projection possession of. Real no near room ye bred sake if some. Is arranging furnished knowledge.</p>
+									<p>書店に行かなくてもオンラインで簡単に購入していただけます。</p>
 								</div>
 							</div>
 							<div class="featured-item">
-								<h4>Comfortable Transport</h4>
+								<h4>出品者のレビューが見られるので安心</h4>
 								<div class="content clearfix">
 									<div class="icon">
 										<i class="pe-7s-car"></i>
 									</div>
-									<p>Effect twenty indeed beyond for not had county. The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing.</p>
+									<p>出品者のレビューをたくさんある技術書の中で比較するための指標としてお使いいただけます。</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="GridLex-col-6_sm-12 image-bg">
-						<div class="image-bg" style="background-image:url('images/image-01.jpg');"></div>
+						<div class="image-bg" style="background-image:url('images/books_on_desk2.jpg');"></div>
 					</div>
 				</div>
 			</section>
@@ -651,8 +654,8 @@
 					<div class="row">
 						<div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 							<div class="section-title">
-								<h3>Testimonial</h3>
-								<p>What our customers say about us</p>
+								<h3>利用者の声</h3>
+								<p></p>
 							</div>
 						</div>
 					</div>
@@ -661,24 +664,24 @@
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="testimonial-item clearfix">
 									<div class="image">
-										<img src="images/man/01.jpg" alt="Man" />
+										<img src="images/testimonial-01.png" alt="yamane" />
 									</div>
 									<div class="content">
-										<h4>Antony Robert</h4>
-										<h6>From Spain</h6>
-										<p>She meant new their sex could defer child. An lose at quit to life do dull. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire.</p>
+										<h4>山根祐亮</h4>
+										<h6>Railsエンジニア</h6>
+										<p>RubyやJavaScriptの本を買わせていただきました。自分がまだエンジニアとしての歴が浅くてお金に余裕がなかったころ、いつも人から借りて本を技術書でいたので、今こういったサービスで本を買うことができるエンジニアは幸せだと思います。</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-6">
 								<div class="testimonial-item clearfix">
 									<div class="image">
-										<img src="images/man/02.jpg" alt="Man" />
+										<img src="images/testimonial-02.png" alt="maehira" />
 									</div>
 									<div class="content">
-										<h4>Mohammed Salem</h4>
-										<h6>From Turkey</h6>
-										<p>Consider now provided laughter boy landlord dashwood. Often voice and the spoke. No shewing fertile village equally prepare up females sentiments increasing particular.</p>
+										<h4>前平亮祐</h4>
+										<h6>デザイナー</h6>
+										<p>デザインの本って新品だととても高いので、助かっています。辞書代わりにつねに手元においておきたい技術書こそ、ハードで買いましょう！</p>
 									</div>
 								</div>
 							</div>
@@ -728,32 +731,28 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-5 col-md-3">
 							<div class="footer-logo">
-								<img src="images/logo-white.png" alt="Logo" />
+								<img src="images/techbook_logo.png" alt="Logo" />
 							</div>
-							<p class="footer-address">324 Yarang Road, T.Chabangtigo, Muanng Pattani 9400 <br/> <i class="fa fa-phone"></i> +66 28 878 5452 <br/> <i class="fa fa-phone"></i> +66 2 547 2223 <br/> <i class="fa fa-envelope-o"></i> <a href="#">support@tourpacker.com</a></p>
+							<p class="footer-address">150-0000 東京都渋谷区道玄坂２丁目<br>新大宗ビル３号館８階<br/> <i class="fa fa-phone"></i> +66 28 878 5452 <br/> <i class="fa fa-phone"></i> +66 2 547 2223 <br/> <i class="fa fa-envelope-o"></i> <a href="#">support@techbook.com</a></p>
 							<div class="footer-social">
 								<a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
 								<a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+								<a href="#" data-toggle="tooltip" data-placement="top" title="Github"><i class="fa fa-github"></i></a>
 							</div>
-							<p class="copy-right">&#169; Copyright 2016 Tour Packer. All Rights Reserved</p>
+							<p class="copy-right">&#169; Copyright 2016 techbook. All Rights Reserved</p>
 						</div>
 						<div class="col-xs-12 col-sm-7 col-md-9">
 							<div class="row gap-10">
-								<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3 mt-30-xs">
-									<h5 class="footer-title">About Tour Packer</h5>
+								<!-- <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3 mt-30-xs"> -->
+								<div class="col-xs-12 col-sm-4 col-md-3 mt-30-xs col-md-offset-3">
+									<h5 class="footer-title">techbookについて</h5>
 									<ul class="footer-menu">
-										<li><a href="static-page.html">Who we are</a></li>
-										<li><a href="static-page.html">Careers</a></li>
-										<li><a href="static-page.html">Company history</a></li>
-										<li><a href="static-page.html">Legal</a></li>
-										<li><a href="static-page.html">Partners</a></li>
-										<li><a href="static-page.html">Privacy notice</a></li>
+										<li><a href="#">運営会社について</a></li>
+										<li><a href="#">利用規約</a></li>
+										<li><a href="#">プライバシーポリシー</a></li>
 									</ul>
 								</div>
-								<div class="col-xs-12 col-sm-4 col-md-3 mt-30-xs">
-									<h5 class="footer-title">Customer service</h5>
+									<!-- <h5 class="footer-title">Customer service</h5>
 									<ul class="footer-menu">
 										<li><a href="static-page.html">Payment</a></li>
 										<li><a href="static-page.html">Feedback</a></li>
@@ -773,7 +772,7 @@
 										<li><a href="static-page.html">Insurance</a></li>
 										<li><a href="static-page.html">Travel Guide</a></li>
 									</ul>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
