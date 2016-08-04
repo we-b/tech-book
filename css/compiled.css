@@ -8339,7 +8339,7 @@ ul.help-list li:last-child {
  * Layout
  */
 .container-wrapper {
-  padding-top: 110px; }
+  padding-top: 70px; }
 
 section,
 .section {
@@ -20924,5 +20924,11 @@ Copyright (c) 2015 Daniel Eden
   .btn-primary:hover {
     background-color: #ff9929;
     border-color: #f58000; }
+
+.main-wrapper .container .full-width #long-column-item {
+  width: 50%; }
+
+.new-books .package-grid-item {
+  width: 100%; }
 
 /*# sourceMappingURL=compiled.css.map */
