@@ -8339,7 +8339,7 @@ ul.help-list li:last-child {
  * Layout
  */
 .container-wrapper {
-  padding-top: 70px; }
+  padding-top: 110px; }
 
 section,
 .section {
@@ -13613,6 +13613,7 @@ a.top-destination-image-bg {
   font-size: 14px; }
 
 .package-list-item {
+  padding: 15px;
   border-radius: 3px;
   background: #FFF;
   -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.2);
@@ -13630,8 +13631,7 @@ a.top-destination-image-bg {
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4); }
 
 .package-list-item .image {
-  width: 25%;
-  float: left;
+  width: 50%;
   position: relative; }
 
 .package-list-item .image img {
@@ -13650,9 +13650,6 @@ a.top-destination-image-bg {
   font-size: 12px; }
 
 .package-list-item .content {
-  width: 75%;
-  float: left;
-  padding: 0 20px;
   position: relative; }
 
 .package-list-item .content h5 {
@@ -13673,7 +13670,7 @@ a.top-destination-image-bg {
   color: #0f926d;
   font-size: 16px;
   font-weight: 700;
-  margin: 15px 0 25px; }
+  margin-top: 15px; }
 
 .package-list-item .btn-absolute {
   position: absolute;
@@ -13747,12 +13744,6 @@ ul.list-info.bb-dotted li {
   .package-list-item {
     padding: 15px; }
 
-  .package-list-item .image {
-    width: 40%; }
-
-  .package-list-item .content {
-    width: 60%; }
-
   .package-list-item .image img {
     border-radius: 3px; }
 
@@ -13760,7 +13751,7 @@ ul.list-info.bb-dotted li {
     padding-right: 0; }
 
   .package-list-item .content h5 {
-    margin: 0 0 10px; }
+    margin: 10px 0; }
 
   .package-list-item .content .price {
     margin-bottom: 20px; } }
