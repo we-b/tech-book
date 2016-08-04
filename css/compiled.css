@@ -13630,7 +13630,7 @@ a.top-destination-image-bg {
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4); }
 
 .package-list-item .image {
-  width: 35%;
+  width: 25%;
   float: left;
   position: relative; }
 
@@ -13650,7 +13650,7 @@ a.top-destination-image-bg {
   font-size: 12px; }
 
 .package-list-item .content {
-  width: 65%;
+  width: 75%;
   float: left;
   padding: 0 20px;
   position: relative; }
