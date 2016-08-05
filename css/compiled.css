@@ -12626,7 +12626,7 @@ ol.breadcrumb-list.booking-step li:not(:last-child) span:after {
   margin: 0 7px; }
 
 .page-title.detail-page-title {
-  padding: 220px 0 30px;
+  padding: 60px 0 30px;
   text-align: left; }
 
 .breadcrumb-wrapper {
@@ -20921,5 +20921,27 @@ Copyright (c) 2015 Daniel Eden
 
 .new-books .package-grid-item {
   width: 100%; }
+
+.btn-full-width {
+  width: 100%; }
+
+.price span {
+  font-size: calc(150%); }
+
+.user-thumbnail {
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: 80px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat; }
+
+.payment-traveller {
+  border-bottom: 0; }
 
 /*# sourceMappingURL=compiled.css.map */
