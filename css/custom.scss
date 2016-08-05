@@ -18,6 +18,15 @@
 .new-books .package-grid-item {
   width: 100%;
 }
+
+.btn-full-width {
+  width: 100%;
+}
+
+.price span {
+  font-size: calc(150%);
+}
+
 .user-thumbnail {
   display: block;
   margin: 0 auto;
