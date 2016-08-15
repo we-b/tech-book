@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,528 +15,277 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div id="introLoader" class="introLoading"></div>
-  <!-- BEGIN # MODAL LOGIN -->
-  <div class="modal fade modal-login modal-border-transparent" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <button type="button" class="btn btn-close close" data-dismiss="modal" aria-label="Close">
-          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-        </button>
-        <div class="clear"></div>
-        <!-- Begin # DIV Form -->
-        <div id="modal-login-form-wrapper">
-          <!-- Begin # Login Form -->
-          <form id="login-form">
-            <div class="modal-body pb-5">
-              <h4 class="text-center heading mt-10 mb-20">ログイン</h4>
-              <button class="btn btn-facebook btn-block">Facebookでログイン</button>
-              <div class="modal-seperator">
-                <span>or</span>
-              </div>
-              <div class="form-group">
-                <input id="login_username" class="form-control" placeholder="ユーザーネーム" type="text">
-              </div>
-              <div class="form-group">
-                <input id="login_password" class="form-control" placeholder="パスワード" type="password">
-              </div>
-              <div class="form-group">
-                <div class="row gap-5">
-                  <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="checkbox-block fa-checkbox">
-                      <input id="remember_me_checkbox" name="remember_me_checkbox" class="checkbox" value="First Choice" type="checkbox"> 
-                      <label class="" for="remember_me_checkbox">ログイン情報を記憶する</label>
+  <div class="clear"></div>
+  <!-- start Main Wrapper -->
+  <div class="main-wrapper">
+    <div class="breadcrumb-wrapper bg-light-2">
+      <div class="container">
+        <ol class="breadcrumb-list booking-step">
+          <li><a href="">トップページ</a></li>
+          <li><a href="#">検索結果</a></li>
+          <li><a href="#">詳細画面</a></li>
+          <li><span>お支払い</span></li>
+          <li><span>完了</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 visible-xs mb-50">
+            <div class="price-summary-wrapper">
+              <h4 class="heading mt-0 text-primary uppercase">注文内容</h4>
+              <ul class="price-summary-list">
+                <li>
+                  <h6 class="heading mt-0 mb-0">ランディングページ・デザインメソッド</h6>
+                  <p class="font12 text-light">デザイン</p>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <h6 class="heading mt-20 mb-5 text-primary uppercase">価格内訳</h6>
+                  <div class="row gap-10 mt-10">
+                    <div class="col-xs-7 col-sm-7">
+                      本体価格
+                    </div>
+                    <div class="col-xs-5 col-sm-5 text-right">
+                      1200円
                     </div>
                   </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 text-right">
-                    <button id="login_lost_btn" type="button" class="btn btn-link">パスワードをお忘れですか?</button>
+                  <div class="row gap-10 mt-10">
+                    <div class="col-xs-7 col-sm-7">
+                      送料
+                    </div>
+                    <div class="col-xs-5 col-sm-5 text-right">
+                      200円
+                    </div>
+                  </div>
+                  <div class="row gap-10 mt-10">
+                    <div class="col-xs-7 col-sm-7">
+                      消費税
+                    </div>
+                    <div class="col-xs-5 col-sm-5 text-right">
+                      96円
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li class="text-right font600 font14">
+                  1296円
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="row gap-10 font600 font14">
+                    <div class="col-xs-9 col-sm-9">
+                      購入点数
+                    </div>
+                    <div class="col-xs-3 col-sm-3 text-right">
+                      1
+                    </div>
+                  </div>
+                </li>
+                <li class="total-price">
+                  <div class="row gap-10">
+                    <div class="col-xs-6 col-sm-6">
+                      <h5 class="heading mt-0 mb-0 text-white">Amount due</h5>
+                      <p class="font12">合計金額</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 text-right">
+                      <span class="block font20 font600 mb-5">1200円</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-8 col-md-9" role="main">
+            <div class="section-title text-left">
+              <h3>ランディングページ・デザインメソッド<small>を購入します。</small></h3>
+            </div>
+            <div class="payment-container">
+              <form>
+                <div class="payment-box">
+                  <div class="payment-header clearfix">
+                    <div class="number">
+                      !
+                    </div>
+                    <h5 class="heading mt-0">お届け先詳細</h5>
+                    <p><spna class="necessary-info">*必須情報</spna></p>
+                  </div>
+                  <div class="payment-content">
+                    <div class="payment-traveller">
+                      <div class="row gap-0">
+                      </div>
+                      <div class="form-horizontal">
+                        <div class="form-group gap-20">
+                          <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>姓:</label>
+                          <div class="col-sm-6 col-md-6">
+                            <input type="text" class="form-control" value="せきや">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-horizontal">
+                        <div class="form-group gap-20">
+                          <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>名:</label>
+                          <div class="col-sm-6 col-md-6">
+                            <input type="text" class="form-control" value="じょうじ">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-horizontal">
+                        <div class="form-group gap-20">
+                          <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>メールアドレス:</label>
+                          <div class="col-sm-6 col-md-6">
+                            <input type="email" class="form-control" value="george-sekiya@hoge.com">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-horizontal">
+                        <div class="form-group gap-20">
+                          <label class="col-sm-4 col-md-4 control-label">電話番号:</label>
+                          <div class="col-sm-6 col-md-6">
+                            <input type="email" class="form-control" value="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-horizontal">
+                        <div class="form-group gap-20">
+                          <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>郵便番号:</label>
+                          <div class="col-sm-6 col-md-6">
+                            <input type="email" class="form-control" value="150-0000">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-horizontal">
+                        <div class="form-group gap-20">
+                          <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>住所:</label>
+                          <div class="col-sm-6 col-md-6">
+                            <input type="email" class="form-control" value="東京都渋谷区道玄坂２丁目新大宗ビル３号館８階">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </form>
+            </div>
+            <div class="checkbox-block">
+              <input id="accept_booking" name="accept_booking" type="checkbox" class="checkbox" value="paymentsCreditCard"/>
+              <label class="" for="accept_booking"><a href="#">利用規約</a>及び<a href="#">プライバシーポリシー</a>に同意します。</label>
+            </div>
+            <div class="row mt-20 clearfix">
+              <div class="col-sm-12 col-md-12">
+                <button class="btn btn-primary">注文を確定する</button>
               </div>
             </div>
-            <div class="modal-footer">
-              <div class="row gap-10">
-                <div class="col-xs-6 col-sm-6 mb-10">
-                  <button type="submit" class="btn btn-primary btn-block">ログイン</button>
-                </div>
-                <div class="col-xs-6 col-sm-6 mb-10">
-                  <button type="submit" class="btn btn-primary btn-block btn-inverse" data-dismiss="modal" aria-label="Close">戻る</button>
-                </div>
-              </div>
-              <div class="text-left">
-                まだアカウントをお持ちでない場合は
-                <button id="login_register_btn" type="button" class="btn btn-link">こちら</button>
-              </div>
+          </div>
+          <div class="col-sm-4 col-md-3 hidden-xs">
+            <div class="price-summary-wrapper">
+              <h4 class="heading mt-0 text-primary uppercase">注文内容</h4>
+              <ul class="price-summary-list">
+                <li>
+                  <h6 class="heading mt-0 mb-0">ランディングページ・デザインメソッド</h6>
+                  <p class="font12 text-light">デザイン</p>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <h6 class="heading mt-20 mb-5 text-primary uppercase">価格内訳</h6>
+                  <div class="row gap-10 mt-10">
+                    <div class="col-xs-7 col-sm-7">
+                      本体価格
+                    </div>
+                    <div class="col-xs-5 col-sm-5 text-right">
+                      1200円
+                    </div>
+                  </div>
+                  <div class="row gap-10 mt-10">
+                    <div class="col-xs-7 col-sm-7">
+                      送料
+                    </div>
+                    <div class="col-xs-5 col-sm-5 text-right">
+                      200円
+                    </div>
+                  </div>
+                  <div class="row gap-10 mt-10">
+                    <div class="col-xs-7 col-sm-7">
+                      消費税
+                    </div>
+                    <div class="col-xs-5 col-sm-5 text-right">
+                      96円
+                    </div>
+                  </div>
+                </li>
+                <li class="divider"></li>
+                <li class="text-right font600 font14">
+                  1296円
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <div class="row gap-10 font600 font14">
+                    <div class="col-xs-9 col-sm-9">
+                      購入点数
+                    </div>
+                    <div class="col-xs-3 col-sm-3 text-right">
+                      1
+                    </div>
+                  </div>
+                </li>
+                <li class="total-price">
+                  <div class="row gap-10">
+                    <div class="col-xs-6 col-sm-6">
+                      <h5 class="heading mt-0 mb-0 text-white">Amount due</h5>
+                      <p class="font12">合計金額</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 text-right">
+                      <span class="block font20 font600 mb-5">1200円</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </form>
-          <!-- End # Login Form -->
-          <!-- Begin | Lost Password Form -->
-          <form id="lost-form" style="display:none;">
-            <div class="modal-body pb-5">
-              <h3 class="text-center heading mt-10 mb-20">パスワードの再設定</h3>
-              <div class="form-group mb-10">
-                <input id="lost_email" class="form-control" type="text" placeholder="登録したアドレスを入力">
-              </div>
-              <div class="text-center">
-                <button id="lost_login_btn" type="button" class="btn btn-link">ログイン</button> / 
-                <button id="lost_register_btn" type="button" class="btn btn-link">新規登録</button>
-              </div>
-            </div>
-            <div class="modal-footer mt-10">
-              <div class="row gap-10">
-                <div class="col-xs-6 col-sm-6">
-                  <button type="submit" class="btn btn-primary btn-block">メールを送信</button>
-                </div>
-                <div class="col-xs-6 col-sm-6">
-                  <button type="submit" class="btn btn-primary btn-inverse btn-block" data-dismiss="modal" aria-label="Close">戻る</button>
-                </div>
-              </div>
-            </div>
-          </form>
-          <!-- End | Lost Password Form -->
-          <!-- Begin | Register Form -->
-          <form id="register-form" style="display:none;">
-            <div class="modal-body pb-5">
-              <h3 class="text-center heading mt-10 mb-20">新規登録</h3>
-              <button class="btn btn-facebook btn-block">Facebookで登録</button>
-              <div class="modal-seperator">
-                <span>or</span>
-              </div>
-              <div class="form-group">
-                <input id="register_username" class="form-control" type="text" placeholder="ユーザーネーム">
-              </div>
-              <div class="form-group">
-                <input id="register_email" class="form-control" type="email" placeholder="Emailアドレス">
-              </div>
-              <div class="form-group">
-                <input id="register_password" class="form-control" type="password" placeholder="パスワード">
-              </div>
-              <div class="form-group">
-                <input id="register_password_confirm" class="form-control" type="password" placeholder="パスワードを再入力">
-              </div>
-
-            </div>
-            <div class="modal-footer mt-10">
-              <div class="row gap-10">
-                <div class="col-xs-6 col-sm-6 mb-10">
-                  <button type="submit" class="btn btn-primary btn-block">登録</button>
-                </div>
-                <div class="col-xs-6 col-sm-6 mb-10">
-                  <button type="submit" class="btn btn-primary btn-inverse btn-block" data-dismiss="modal" aria-label="Close">戻る</button>
-                </div>
-              </div>
-              <div class="text-left">
-                  すでにアカウントをお持ちの場合は<button id="register_login_btn" type="button" class="btn btn-link">こちら</button>
-              </div>
-            </div>
-          </form>
-          <!-- End | Register Form -->
+          </div>
         </div>
-        <!-- End # DIV Form -->
       </div>
     </div>
   </div>
-  <!-- END # MODAL LOGIN -->
-  <!-- start Container Wrapper -->
-  <div class="container-wrapper">
-    <!-- start Header -->
-    <header id="header">
-      <!-- start Navbar (Header) -->
-      <nav class="navbar navbar-primary navbar-fixed-top navbar-sticky-function">
-        <div class="navbar-top">
-          <div class="container">
-            <div class="flex-row flex-align-middle">
-              <div class="flex-shrink flex-columns">
-                <a class="navbar-logo" href="index.html">
-                  <img src="images/techbook_logo.png" alt="Logo" />
-                </a>
-              </div>
-              <div class="flex-columns">
-                <div class="pull-right">
-                  <div class="navbar-mini">
-                    <ul class="clearfix">
-                      <li class="user-action">
-                        <a data-toggle="modal" href="#loginModal" class="btn">ログイン／新規登録</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+  <!-- end Main Wrapper -->
+  <footer class="footer">
+    <div class="container">
+      <div class="main-footer">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-md-3">
+            <div class="footer-logo">
+              <img src="images/techbook_logo.png" alt="Logo" />
+            </div>
+            <p class="footer-address">150-0000 東京都渋谷区道玄坂２丁目<br>新大宗ビル３号館８階<br/> <i class="fa fa-phone"></i> +66 28 878 5452 <br/> <i class="fa fa-phone"></i> +66 2 547 2223 <br/> <i class="fa fa-envelope-o"></i> <a href="#">support@techbook.com</a></p>
+            <div class="footer-social">
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Github"><i class="fa fa-github"></i></a>
+            </div>
+            <p class="copy-right">&#169; Copyright 2016 techbook. All Rights Reserved</p>
+          </div>
+          <div class="col-xs-12 col-sm-7 col-md-9">
+            <div class="row gap-10">
+              <!-- <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3 mt-30-xs"> -->
+              <div class="col-xs-12 col-sm-4 col-md-3 mt-30-xs col-md-offset-3">
+                <h5 class="footer-title">techbookについて</h5>
+                <ul class="footer-menu">
+                  <li><a href="#">運営会社について</a></li>
+                  <li><a href="#">利用規約</a></li>
+                  <li><a href="#">プライバシーポリシー</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div id="slicknav-mobile"></div>
-      </nav>
-      <!-- end Navbar (Header) -->
-    </header>    
-    <div class="clear"></div>
-    
-    <!-- start Main Wrapper -->
-    <div class="main-wrapper">
-      
-      <div class="breadcrumb-wrapper bg-light-2">
-        
-        <div class="container">
-        
-          <ol class="breadcrumb-list booking-step">
-            <li><a href="">トップページ</a></li>
-            <li><a href="#">検索結果</a></li>
-            <li><a href="#">詳細画面</a></li>
-            <li><span>お支払い</span></li>
-            <li><span>完了</span></li>
-          </ol>
-          
-        </div>
-        
       </div>
-      
-      <div class="content-wrapper">
-      
-        <div class="container">
-      
-          <div class="row">
-          
-            <div class="col-sm-12 visible-xs mb-50">
-
-              <div class="price-summary-wrapper">
-                
-                <h4 class="heading mt-0 text-primary uppercase">My Trip</h4>
-              
-                <ul class="price-summary-list">
-                
-                  <li>
-                    <h6 class="heading mt-0 mb-0">Croatia Sailing &amp; Cruising</h6>
-                    <p class="font12 text-light">4 days 3 nights city tour</p>
-                  </li>
-                  
-                  <li>
-                    <h6 class="heading mt-0 mb-0">Starts in Dubrovnik, Croatia</h6>
-                    <p class="font12 text-light">Monday, March 7, 2016</p>
-                  </li>
-                  
-                  <li>
-                    <h6 class="heading mt-0 mb-0">Ends in Hvar, Croatia</h6>
-                    <p class="font12 text-light">Thursday, March 10, 2016</p>
-                  </li>
-                  
-                  <li>
-                    <h6 class="heading mt-0 mb-0">What's included</h6>
-                    <p class="font12 text-light">Accommodation, Guide, Meals, Bus</p>
-                  </li>
-                  
-                  <li class="divider"></li>
-                  
-                  <li>
-                    <h6 class="heading mt-20 mb-5 text-primary uppercase">Price per person</h6>
-                    <div class="row gap-10 mt-10">
-                      <div class="col-xs-7 col-sm-7">
-                        Brochure Price
-                      </div>
-                      <div class="col-xs-5 col-sm-5 text-right">
-                        $1458
-                      </div>
-                    </div>
-                    <div class="row gap-10 mt-10">
-                      <div class="col-xs-7 col-sm-7">
-                        Tax &amp; fee
-                      </div>
-                      <div class="col-xs-5 col-sm-5 text-right">
-                        $0
-                      </div>
-                    </div>
-                  </li>
-                  
-                  <li class="divider"></li>
-                  
-                  <li class="text-right font600 font14">
-                    $1458
-                  </li>
-                  
-                  <li class="divider"></li>
-                  
-                  <li>
-                  
-                    <div class="row gap-10 font600 font14">
-                      <div class="col-xs-9 col-sm-9">
-                        Number of Travellers
-                      </div>
-                      <div class="col-xs-3 col-sm-3 text-right">
-                        1
-                      </div>
-                    </div>
-                  
-                  </li>
-                  
-                  <li class="total-price">
-                  
-                    <div class="row gap-10">
-                      <div class="col-xs-6 col-sm-6">
-                        <h5 class="heading mt-0 mb-0 text-white">Amount due</h5>
-                        <p class="font12">before departure</p>
-                      </div>
-                      <div class="col-xs-6 col-sm-6 text-right">
-                        <span class="block font20 font600 mb-5">$1458</span>
-                        <span class="font10 line10 block">**Best Price Guarantee </span>
-                      </div>
-                    </div>
-                  
-                  </li>
-                  
-                </ul>
-                
-              </div>
-              
-            </div>
-
-            <div class="col-sm-8 col-md-9" role="main">
-  
-              <div class="section-title text-left">
-                
-                <h3>ランディングページ・デザインメソッド<small>を購入します。</small></h3>
-                
-              </div>
-              
-              <div class="payment-container">
-              
-                <form>
-                  <div class="payment-box">
-                  
-                    <div class="payment-header clearfix">
-                    
-                      <div class="number">
-                        !
-                      </div>
-                      
-                      <h5 class="heading mt-0">お届け先詳細</h5>
-                      <p><spna class="necessary-info">*必須情報</spna></p>
-                    
-                    </div>
-                    
-                    <div class="payment-content">
-                      
-                      <div class="payment-traveller">
-                      
-                        <div class="row gap-0">
-                        </div>
-                        <div class="form-horizontal">
-                          <div class="form-group gap-20">
-                            <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>姓:</label>
-                            <div class="col-sm-6 col-md-6">
-                              <input type="text" class="form-control" value="せきや">
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <div class="form-horizontal">
-                          <div class="form-group gap-20">
-                            <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>名:</label>
-                            <div class="col-sm-6 col-md-6">
-                              <input type="text" class="form-control" value="じょうじ">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-horizontal">
-                          <div class="form-group gap-20">
-                            <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>メールアドレス:</label>
-                            <div class="col-sm-6 col-md-6">
-                              <input type="email" class="form-control" value="george-sekiya@hoge.com">
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <div class="form-horizontal">
-                          <div class="form-group gap-20">
-                            <label class="col-sm-4 col-md-4 control-label">電話番号:</label>
-                            <div class="col-sm-6 col-md-6">
-                              <input type="email" class="form-control" value="">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-horizontal">
-                          <div class="form-group gap-20">
-                            <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>郵便番号:</label>
-                            <div class="col-sm-6 col-md-6">
-                              <input type="email" class="form-control" value="150-0000">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-horizontal">
-                          <div class="form-group gap-20">
-                            <label class="col-sm-4 col-md-4 control-label"><spna class="necessary-info">*</spna>住所:</label>
-                            <div class="col-sm-6 col-md-6">
-                              <input type="email" class="form-control" value="東京都渋谷区道玄坂２丁目新大宗ビル３号館８階">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="checkbox-block">
-                <input id="accept_booking" name="accept_booking" type="checkbox" class="checkbox" value="paymentsCreditCard"/>
-                <label class="" for="accept_booking"><a href="#">利用規約</a>及び<a href="#">プライバシーポリシー</a>に同意します。</label>
-              </div>
-              <div class="row mt-20 clearfix">
-                <div class="col-sm-12 col-md-12">
-                  <button class="btn btn-primary">注文を確定する</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-md-3 hidden-xs">
-              <div class="price-summary-wrapper">
-                <h4 class="heading mt-0 text-primary uppercase">注文内容</h4>
-                <ul class="price-summary-list">
-                  <li>
-                    <h6 class="heading mt-0 mb-0">ランディングページ・デザインメソッド</h6>
-                    <p class="font12 text-light">デザイン</p>
-                  </li>
-                  
-                  <li class="divider"></li>
-                  
-                  <li>
-                    <h6 class="heading mt-20 mb-5 text-primary uppercase">価格内訳</h6>
-                    <div class="row gap-10 mt-10">
-                      <div class="col-xs-7 col-sm-7">
-                        本体価格
-                      </div>
-                      <div class="col-xs-5 col-sm-5 text-right">
-                        1200円
-                      </div>
-                    </div>
-                    <div class="row gap-10 mt-10">
-                      <div class="col-xs-7 col-sm-7">
-                        送料
-                      </div>
-                      <div class="col-xs-5 col-sm-5 text-right">
-                        200円
-                      </div>
-                    </div>
-                    <div class="row gap-10 mt-10">
-                      <div class="col-xs-7 col-sm-7">
-                        消費税
-                      </div>
-                      <div class="col-xs-5 col-sm-5 text-right">
-                        96円
-                      </div>
-                    </div>
-                  </li>
-                  
-                  <li class="divider"></li>
-                  
-                  <li class="text-right font600 font14">
-                    1296円
-                  </li>
-                  
-                  <li class="divider"></li>
-                  
-                  <li>
-                  
-                    <div class="row gap-10 font600 font14">
-                      <div class="col-xs-9 col-sm-9">
-                        購入点数
-                      </div>
-                      <div class="col-xs-3 col-sm-3 text-right">
-                        1
-                      </div>
-                    </div>
-                  
-                  </li>
-                  
-                  <li class="total-price">
-                  
-                    <div class="row gap-10">
-                      <div class="col-xs-6 col-sm-6">
-                        <h5 class="heading mt-0 mb-0 text-white">Amount due</h5>
-                        <p class="font12">合計金額</p>
-                      </div>
-                      <div class="col-xs-6 col-sm-6 text-right">
-                        <span class="block font20 font600 mb-5">1200円</span>
-                      </div>
-                    </div>
-                  
-                  </li>
-                  
-                </ul>
-                
-              </div>
-              
-            </div>
-
-          </div>
-        
-        </div>
-          
-      </div>
-
     </div>
-    <!-- end Main Wrapper -->
-    <footer class="footer">
-      <div class="container">
-        <div class="main-footer">
-          <div class="row">
-            <div class="col-xs-12 col-sm-5 col-md-3">
-              <div class="footer-logo">
-                <img src="images/techbook_logo.png" alt="Logo" />
-              </div>
-              <p class="footer-address">150-0000 東京都渋谷区道玄坂２丁目<br>新大宗ビル３号館８階<br/> <i class="fa fa-phone"></i> +66 28 878 5452 <br/> <i class="fa fa-phone"></i> +66 2 547 2223 <br/> <i class="fa fa-envelope-o"></i> <a href="#">support@techbook.com</a></p>
-              <div class="footer-social">
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" data-toggle="tooltip" data-placement="top" title="Github"><i class="fa fa-github"></i></a>
-              </div>
-              <p class="copy-right">&#169; Copyright 2016 techbook. All Rights Reserved</p>
-            </div>
-            <div class="col-xs-12 col-sm-7 col-md-9">
-              <div class="row gap-10">
-                <!-- <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3 mt-30-xs"> -->
-                <div class="col-xs-12 col-sm-4 col-md-3 mt-30-xs col-md-offset-3">
-                  <h5 class="footer-title">techbookについて</h5>
-                  <ul class="footer-menu">
-                    <li><a href="#">運営会社について</a></li>
-                    <li><a href="#">利用規約</a></li>
-                    <li><a href="#">プライバシーポリシー</a></li>
-                  </ul>
-                </div>
-                  <!-- <h5 class="footer-title">Customer service</h5>
-                  <ul class="footer-menu">
-                    <li><a href="static-page.html">Payment</a></li>
-                    <li><a href="static-page.html">Feedback</a></li>
-                    <li><a href="static-page.html">Contact us</a></li>
-                    <li><a href="static-page.html">Travel advisories</a></li>
-                    <li><a href="static-page.html">FAQ</a></li>
-                    <li><a href="static-page.html">Site map</a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 mt-30-xs">
-                  <h5 class="footer-title">Others</h5>
-                  <ul class="footer-menu">
-                    <li><a href="static-page.html">Destinations</a></li>
-                    <li><a href="static-page.html">Blog</a></li>
-                    <li><a href="static-page.html">Pre Departure Planning</a></li>
-                    <li><a href="static-page.html">Visas</a></li>
-                    <li><a href="static-page.html">Insurance</a></li>
-                    <li><a href="static-page.html">Travel Guide</a></li>
-                  </ul>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>  <!-- end Container Wrapper -->
- 
-
- 
+  </footer>
   <!-- start Back To Top -->
   <div id="back-to-top">
      <a href="#"><i class="fa fa-angle-up"></i></a>
   </div>
   <!-- end Back To Top -->
-
-
-
 <!-- JS -->
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
@@ -606,7 +354,6 @@
         }
       })
     }, 100)
-    
   })
 
 }(window.jQuery)
