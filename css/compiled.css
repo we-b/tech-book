@@ -17744,9 +17744,6 @@ input[type='checkbox']:checked + label:before {
   overflow: hidden;
   z-index: 9999; }
 
-.introLoading {
-  background-color: #fff; }
-
 .absolute.introLoader {
   position: absolute; }
 
@@ -20943,5 +20940,9 @@ Copyright (c) 2015 Daniel Eden
 
 .payment-traveller {
   border-bottom: 0; }
+
+.package-list-item-link .content p {
+  color: #666;
+  font-weight: lighter; }
 
 /*# sourceMappingURL=compiled.css.map */
