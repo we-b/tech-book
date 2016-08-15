@@ -22,19 +22,19 @@
         };
         
         var s_infobox = {
-					content: "",
-					disableAutoPan: true,
-					maxWidth: 0,
-					pixelOffset: new google.maps.Size(35, -90),
-					closeBoxMargin: '1px -16px 0 0',
-					closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
-					isHidden: false,
-					pane: 'floatPane',
-					enableEventPropagation: true,
-					boxStyle: { 
-						width: "220px"
-					}
-			};
+          content: "",
+          disableAutoPan: true,
+          maxWidth: 0,
+          pixelOffset: new google.maps.Size(35, -90),
+          closeBoxMargin: '1px -16px 0 0',
+          closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif",
+          isHidden: false,
+          pane: 'floatPane',
+          enableEventPropagation: true,
+          boxStyle: { 
+            width: "220px"
+          }
+      };
         
         defaults = {
 
@@ -106,7 +106,7 @@
             if (settings.infobox) {
                var boxText = document.createElement("div");
                boxText.style.cssText = settings.infobox_s_txt
-		       boxText.innerHTML = "hello world";
+           boxText.innerHTML = "hello world";
                var m_box = new InfoBox(settings.infobox_s);
             }
                         
